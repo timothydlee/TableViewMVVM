@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C0ADC69D2120CAFA00E5EAF1 /* NamePictureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0ADC69B2120CAFA00E5EAF1 /* NamePictureCell.swift */; };
+		C0ADC69E2120CAFA00E5EAF1 /* NamePictureCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0ADC69C2120CAFA00E5EAF1 /* NamePictureCell.xib */; };
+		C0ADC6A12120DE4400E5EAF1 /* AboutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0ADC69F2120DE4400E5EAF1 /* AboutCell.swift */; };
+		C0ADC6A22120DE4400E5EAF1 /* AboutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0ADC6A02120DE4400E5EAF1 /* AboutCell.xib */; };
+		C0ADC6A52120DEE700E5EAF1 /* EmailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0ADC6A32120DEE700E5EAF1 /* EmailCell.swift */; };
+		C0ADC6A62120DEE700E5EAF1 /* EmailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0ADC6A42120DEE700E5EAF1 /* EmailCell.xib */; };
+		C0ADC6A921211D6E00E5EAF1 /* AttributeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0ADC6A721211D6E00E5EAF1 /* AttributeCell.swift */; };
+		C0ADC6AA21211D6E00E5EAF1 /* AttributeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0ADC6A821211D6E00E5EAF1 /* AttributeCell.xib */; };
 		C0F6A613211E786000C4BA1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F6A612211E786000C4BA1B /* AppDelegate.swift */; };
 		C0F6A615211E786000C4BA1B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F6A614211E786000C4BA1B /* ViewController.swift */; };
 		C0F6A618211E786000C4BA1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0F6A616211E786000C4BA1B /* Main.storyboard */; };
@@ -18,6 +26,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C0ADC69B2120CAFA00E5EAF1 /* NamePictureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamePictureCell.swift; sourceTree = "<group>"; };
+		C0ADC69C2120CAFA00E5EAF1 /* NamePictureCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NamePictureCell.xib; sourceTree = "<group>"; };
+		C0ADC69F2120DE4400E5EAF1 /* AboutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutCell.swift; sourceTree = "<group>"; };
+		C0ADC6A02120DE4400E5EAF1 /* AboutCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutCell.xib; sourceTree = "<group>"; };
+		C0ADC6A32120DEE700E5EAF1 /* EmailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailCell.swift; sourceTree = "<group>"; };
+		C0ADC6A42120DEE700E5EAF1 /* EmailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmailCell.xib; sourceTree = "<group>"; };
+		C0ADC6A721211D6E00E5EAF1 /* AttributeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributeCell.swift; sourceTree = "<group>"; };
+		C0ADC6A821211D6E00E5EAF1 /* AttributeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AttributeCell.xib; sourceTree = "<group>"; };
 		C0F6A60F211E786000C4BA1B /* mvvm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mvvm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0F6A612211E786000C4BA1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0F6A614211E786000C4BA1B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -41,6 +57,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C0ADC69A2120CAC200E5EAF1 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				C0ADC69B2120CAFA00E5EAF1 /* NamePictureCell.swift */,
+				C0ADC69C2120CAFA00E5EAF1 /* NamePictureCell.xib */,
+				C0ADC69F2120DE4400E5EAF1 /* AboutCell.swift */,
+				C0ADC6A02120DE4400E5EAF1 /* AboutCell.xib */,
+				C0ADC6A32120DEE700E5EAF1 /* EmailCell.swift */,
+				C0ADC6A42120DEE700E5EAF1 /* EmailCell.xib */,
+				C0ADC6A721211D6E00E5EAF1 /* AttributeCell.swift */,
+				C0ADC6A821211D6E00E5EAF1 /* AttributeCell.xib */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
 		C0F6A606211E786000C4BA1B = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +91,7 @@
 		C0F6A611211E786000C4BA1B /* mvvm */ = {
 			isa = PBXGroup;
 			children = (
+				C0ADC69A2120CAC200E5EAF1 /* TableViewCells */,
 				C0F6A612211E786000C4BA1B /* AppDelegate.swift */,
 				C0F6A614211E786000C4BA1B /* ViewController.swift */,
 				C0F6A616211E786000C4BA1B /* Main.storyboard */,
@@ -131,9 +163,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0ADC69E2120CAFA00E5EAF1 /* NamePictureCell.xib in Resources */,
+				C0ADC6A62120DEE700E5EAF1 /* EmailCell.xib in Resources */,
 				C0F6A640211FF06600C4BA1B /* ServerData.json in Resources */,
 				C0F6A61D211E786100C4BA1B /* LaunchScreen.storyboard in Resources */,
+				C0ADC6A22120DE4400E5EAF1 /* AboutCell.xib in Resources */,
 				C0F6A61A211E786100C4BA1B /* Assets.xcassets in Resources */,
+				C0ADC6AA21211D6E00E5EAF1 /* AttributeCell.xib in Resources */,
 				C0F6A618211E786000C4BA1B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,8 +183,12 @@
 			files = (
 				C0F6A634211E8EF600C4BA1B /* ProfileModel.swift in Sources */,
 				C0F6A615211E786000C4BA1B /* ViewController.swift in Sources */,
+				C0ADC6A921211D6E00E5EAF1 /* AttributeCell.swift in Sources */,
 				C0F6A63E211F6D0200C4BA1B /* ProfileViewModel.swift in Sources */,
+				C0ADC6A52120DEE700E5EAF1 /* EmailCell.swift in Sources */,
+				C0ADC69D2120CAFA00E5EAF1 /* NamePictureCell.swift in Sources */,
 				C0F6A613211E786000C4BA1B /* AppDelegate.swift in Sources */,
+				C0ADC6A12120DE4400E5EAF1 /* AboutCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

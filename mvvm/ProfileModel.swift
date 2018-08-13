@@ -8,8 +8,6 @@
 
 import Foundation
 
-
-
 class Profile {
     var fullName: String?
     var pictureUrl: String?

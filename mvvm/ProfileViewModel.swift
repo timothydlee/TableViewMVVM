@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 enum ProfileViewModelItemType {
     case nameAndPicture
@@ -156,7 +157,19 @@ class ProfileViewModelFriendsItem: ProfileViewModelItem {
     }
 }
 
-
+extension ProfileViewModel: UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return items.count
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return items[section].rowCount
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        <#code#>
+    }
+}
 
 
 
