@@ -167,7 +167,44 @@ extension ProfileViewModel: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        let item = items[indexPath.section]
+        
+        switch item.type {
+        case .nameAndPicture:
+            if let cell = tableView.dequeueReusableCell(withIdentifier: NamePictureCell.identifier, for: indexPath) as? NamePictureCell {
+                cell.item = item
+                return cell
+            }
+        case .about:
+            if let cell = tableView.dequeueReusableCell(withIdentifier: AboutCell.identifier, for: indexPath) as? AboutCell {
+                cell.item = item
+                return cell
+            }
+            
+        case .email:
+            if let cell = tableView.dequeueReusableCell(withIdentifier: EmailCell.identifier, for: indexPath) as? EmailCell {
+                cell.item = item
+                return cell
+            }
+        
+        case .friend:
+            if let item = item as? ProfileViewModelFriendsItem, let cell = tableView.dequeueReusableCell(withIdentifier: FriendCell.identifier, for: indexPath) as? FriendCell {
+                let friend = item.friends[indexPath.row]
+                cell.item = friend
+                return cell
+            }
+            
+        case .attribute:
+            if let item = item as? ProfileViewModelAttributeItem, let cell = tableView.dequeueReusableCell(withIdentifier: AttributeCell.identifier, for: indexPath) as? AttributeCell {
+                cell.item = item.attributes[indexPath.row]
+                return cell
+            }
+        }
+        return UITableViewCell()
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return items[section].sectionTitle
     }
 }
 

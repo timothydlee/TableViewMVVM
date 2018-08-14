@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,6 +21,10 @@
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HOf-NS-c49">
                         <rect key="frame" x="16" y="19" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="d3o-qp-rT5"/>
+                            <constraint firstAttribute="height" constant="100" id="vBd-l0-6E2"/>
+                        </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c92-Qp-eQL">
                         <rect key="frame" x="139" y="59" width="42" height="21"/>
@@ -31,12 +34,12 @@
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="c92-Qp-eQL" firstAttribute="leading" secondItem="HOf-NS-c49" secondAttribute="trailing" constant="23" id="3qb-8m-7v2"/>
-                    <constraint firstItem="HOf-NS-c49" firstAttribute="centerY" secondItem="c92-Qp-eQL" secondAttribute="centerY" id="Xro-2Z-DEd"/>
-                    <constraint firstItem="HOf-NS-c49" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="hSF-3F-jvm"/>
-                    <constraint firstItem="HOf-NS-c49" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="tti-De-cCf"/>
-                    <constraint firstItem="c92-Qp-eQL" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="u6p-1Q-FWQ"/>
-                    <constraint firstItem="HOf-NS-c49" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="zwB-RR-4Ge"/>
+                    <constraint firstItem="c92-Qp-eQL" firstAttribute="leading" secondItem="HOf-NS-c49" secondAttribute="trailing" constant="23" id="FlD-ii-vQN" userLabel="Name Label.leading = Picture Image View.trailing + 20"/>
+                    <constraint firstAttribute="trailing" secondItem="c92-Qp-eQL" secondAttribute="trailing" constant="139" id="HFY-r5-WiQ" userLabel="trailing = Name Label.trailing + 20"/>
+                    <constraint firstItem="c92-Qp-eQL" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="YXd-v4-46J"/>
+                    <constraint firstItem="HOf-NS-c49" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="biN-ug-SS8" userLabel="Picture Image View.leading = leading + 20"/>
+                    <constraint firstAttribute="bottom" secondItem="HOf-NS-c49" secondAttribute="bottom" constant="20.5" id="rRR-ki-DEa" userLabel="bottom = Picture Image View.bottom + 1.5"/>
+                    <constraint firstItem="HOf-NS-c49" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="19" id="zdk-U4-atC" userLabel="Picture Image View.top = top"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

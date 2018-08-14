@@ -22,6 +22,19 @@ class NamePictureCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        pictureImageView?.layer.cornerRadius = 50
+        pictureImageView?.clipsToBounds = true
+        pictureImageView?.contentMode = .scaleAspectFit
+        pictureImageView?.backgroundColor = .lightGray
+    }
+    
+    static var nib: UINib {
+        return UINib(nibName: identifier, bundle: nil)
+    }
+    
+    static var identifier: String {
+        return String(describing: self)
     }
     
 }
